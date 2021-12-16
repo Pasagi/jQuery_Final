@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.bar{
+  display: flex;
+  justify-content: flex-end;
+  background: #f6f6f6;
+}
+
+.bar a{
+  text-decoration: none;
+}
+
+.bar li{
+	margin: 5px;
+}
+
+.bar img{
+  margin-right: 5px;
+}
+
+.facebook{
+  border-right: 2px solid #cccccc;
+  padding-right: 8px;
+}
+
+.facebook span{
+  color: #4460a0;
+}
+
+.twitter span{
+  color: #00aaec;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid black;*/
+}
+
+.header h1{
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 224px;
+  background-repeat:no-repeat;
+}
+
+.header ul{
+  display: flex;
+}
+
+.header a{
+  display: block;
+  text-decoration: none;
+  color: #00cc99;
+  padding: 20px;
+  margin-right: 15px;
+  
+}
+
+.header a:hover{
+  border-bottom: 2px solid #00cc99;
+}
+
+.header a:active{
+  color: green;
+  border-bottom: none;
+}
+
+.header a.active{
+  color: green;
+}
+
+.header ul ul{
+  display: none;
+}
+
+/*.header ul > li:hover ul{
+  display: block;
+}*/
+
+.banner{
+  background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+  height: 346px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.banner h2{
+  font-size: 36px;
+  color: white;
+  line-height: 1.2;
+}
+
+.banner_text{
+  width: 1000px;
+  padding: 30px;
+  background: rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+}
+
+.course{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  /*border: 1px solid green;*/
+}
+
+.content{
+  width: 300px;
+  /*border: 1px solid black;*/
+  font-family: Microsoft JhengHei;
+  padding-bottom: 10px;
+  box-shadow: 0px 1px 2px gray;
+}
+
+.content h2{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content p{
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+
+.content  ul{
+    padding-left: 40px;
+}
+
+.content li{
+	list-style:disc;
+}
+
+.compair{
+  font-family: Microsoft JhengHei;
+  /*border: 1px solid green;*/
+  margin-bottom: 80px;
+}
+
+.compair h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.compair table{
+  margin: 0 auto;
+  text-align: left;
+}
+
+.compair th, .compair td{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px 60px;
+}
+
+.compair th{
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+.compair span{
+  color: #3cb371;
+}
+
+.contact{
+  background: linear-gradient(#00644b,#009771);
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.contact h2{
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact form{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contact form textarea{
+  width: 400px;
+  margin-left: 30px;
+}
+
+.personal_info{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.personal_info label{
+  color: white;
+  margin-top: 10px;
+}
+
+.personal_info input{
+  width: 480px;
+  margin: 5px 0;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.personal_info .btn{
+  width: 60px;
+  background: #66cdaa;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.btn:hover{
+  background: green;
+}
+
+.footer{
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.footer img{
+  width: 171px;
+  height: 36px;
+  /* align-slef:start;*/
+}
+
+.footer li{
+  font-family: Microsoft JhengHei;
+  margin-bottom: 5px;
+}
+
+.footer li a{
+  color: 	#FF0080;
+}
+
+.footer a:hover{
+  color: blue;
+}
+
+/*記得 Lightbox 是寫 Style ，權重較高 */
+.lb-number{
+  display: none !important;
+}
+
+.goTop{
+  position: fixed;
+  right: 5%;
+  bottom: 0;
+}
+
+.swiper {
+  width: 1000px;
+  height: 400px;
+}
+
+.swiper_text{
+  width: 1000px;
+  padding: 30px;
+  background: rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  position: absolute;
+  top: 40%;
+  /*border: 1px solid black;*/
+}
+
+.swiper_text h2{
+  font-size: 36px;
+  color: white;
+  line-height: 1.2;
+}
+
+.swiper img {
+  float: left;
+  width:  1000px;
+  height: 400px;
+  object-fit: cover;
+}
